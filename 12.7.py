@@ -16,6 +16,6 @@ try:
     get_age(age)
     print("Fat burning heart rate for a", age,
           "year-old:", fat_burning_heart_rate(age), "bpm")
-except ValueError as ve:
-    print(ve.args[0])
+except ValueError as exc:
+    print(exc.args[0])
     print("Could not calculate heart rate info.\n")
